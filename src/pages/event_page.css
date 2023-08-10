@@ -1,35 +1,9 @@
-*{
+* {
   box-sizing: content-box;
 }
 
 body {
-  background-color: #0F0F0F;
-}
-
-.eventpage {
-  background-color: #0F0F0F;
-  color: white;
-  border-radius: 20px;
-  /* height: 1400px; */
-  width: 70vw;
-  margin-left: 15vw;
-  /* display: flex; */
-  /* gap: 10px; */
-  /* grid-template-columns: auto auto auto auto auto; */
-}
-
-.image {
-  height: 31rem;
-  width: 100%;
-  border-radius: 20px;
-  /* grid-area: 1/1/5/6; */
-  background-color: #1E1B1B;
-}
-
-img{
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
+  background-color: #0f0f0f;
 }
 
 .register {
@@ -40,36 +14,68 @@ img{
   /* padding: 5px; */
   border-radius: 20px;
   /* grid-area: 5/1/7/6; */
-  background-color: #1E1B1B;
+  background-color: #1e1b1b;
 }
 
 .c1 {
   display: flex;
 }
 
-.organizer {
-  height: 250px;
-  width: 23%;
-  border-radius: 20px;
-  /* grid-area: 7/1/9/2; */
-  background-color: #1E1B1B;
-  /* padding-left: 20px; */
-  padding-top: 1%;
+@media only screen and (min-width: 1080px) {
+  .eventpage {
+    background-color: #0f0f0f;
+    color: white;
+    border-radius: 20px;
+    /* height: 1400px; */
+    width: 70vw;
+    margin-left: 15vw;
+    /* display: flex; */
+    /* gap: 10px; */
+    /* grid-template-columns: auto auto auto auto auto; */
+  }
+  .organizer {
+    height: 250px;
+    width: 23%;
+    border-radius: 20px;
+    /* grid-area: 7/1/9/2; */
+    background-color: #1e1b1b;
+    /* padding-left: 20px; */
+    padding-top: 1%;
+  }
+
+  .image {
+    height: 31rem;
+    width: 100%;
+    border-radius: 20px;
+    /* grid-area: 1/1/5/6; */
+    background-color: #1e1b1b;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+  }
+  .about {
+    height: fit-content;
+    width: 50%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding-bottom: 1%;
+    border-radius: 20px;
+    /* grid-area: 7/2/9/5; */
+    background-color: #1e1b1b;
+    padding-left: 2%;
+    padding-right: 1%;
+    padding-top: 18px;
+  }
 }
 
-.about {
-  height: fit-content;
-  width: 50%;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 2%;
-  padding-bottom: 1%;
-  border-radius: 20px;
-  /* grid-area: 7/2/9/5; */
-  background-color: #1E1B1B;
-  padding-left: 2%;
-  padding-right: 1%;
-  padding-top: 18px;
+@media screen and (max-width: 1080px) {
+  .organizer {
+    display: none;
+  }
 }
 
 .deadline {
@@ -77,7 +83,7 @@ img{
   width: 23%;
   border-radius: 20px;
   /* grid-area: 7/5/10/5; */
-  background-color: #1E1B1B;
+  background-color: #1e1b1b;
   margin-bottom: 20px;
   padding-top: 2%;
   padding-left: 1%;
@@ -86,19 +92,19 @@ img{
 .graytext {
   color: rgba(255, 255, 255, 0.6);
   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 380;
   font-style: normal;
 }
 
 .register h1 {
   font-weight: 700;
-  font-size: xx-large ;
+  font-size: xx-large;
   margin-bottom: 0px;
   margin-top: 1%;
 }
 
-svg{
+svg {
   display: initial;
   vertical-align: initial;
 }
@@ -132,10 +138,9 @@ svg{
   text-decoration: none;
 }
 
-.register a:hover{
+.register a:hover {
   background-image: linear-gradient(54deg, #f54009b3 50%, #f5d20b93 100%);
   cursor: pointer;
-  
 }
 
 .register hr {
@@ -169,7 +174,7 @@ svg{
   margin-top: 1rem;
 }
 
-.logo{
+.logo {
   width: 7rem;
   height: auto;
   margin-top: 8px;
@@ -178,23 +183,23 @@ svg{
   text-align: center;
 }
 
-.title{
+.title {
   margin-left: 12px;
   font-size: large;
 }
 
-.title2{
+.title2 {
   font-size: large;
 }
 
-.media{
+.media {
   height: 2rem;
   margin-left: auto;
   display: flex;
   padding: 4% 15% 0px 15%;
 }
 
-.media a{
+.media a {
   height: 100%;
   width: auto;
   margin-top: 12px;
@@ -203,36 +208,36 @@ svg{
   margin-right: auto;
 }
 
-.media img{
+.media img {
   border-radius: 0px;
 }
 
-.media img:hover{
+.media img:hover {
   cursor: pointer;
 }
 
-.deadline img{
+.deadline img {
   height: 100%;
   width: auto;
   border-radius: 0px;
   margin-top: 10px;
 }
 
-.clock img{
+.clock img {
   width: 23%;
   height: auto;
   margin-left: 0px;
 }
 
-.clock{
+.clock {
   display: flex;
 }
 
-.container{
+.container {
   display: flex;
 }
 
-.container img{
+.container img {
   width: 20%;
   height: auto;
   padding: 2px;
@@ -241,7 +246,7 @@ svg{
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.details{
+.details {
   margin-top: 15px;
   margin-left: 12px;
   width: 50%;
