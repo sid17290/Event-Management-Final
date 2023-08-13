@@ -1,6 +1,7 @@
 [{
     "s_no" : 0,
     "event_image":"eventpic.jpeg",
+    "event_logo": "soc_logo.jpg",
     "fee": "Free",
     "registration_link" : "https://www.google.com",
     "event_name": "DTU DJ NIGHT",
