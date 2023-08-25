@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import SocietyCard from '../components/SocietyCard'
+import Navbar from '../components/Navbar'
 
 const Societies = () => {
 
@@ -21,7 +22,7 @@ const Societies = () => {
   return (
     <div className='bg-darkGray min-h-screen flex flex-col gap-6 items-center'>
 
-        <nav className='h-12 text-white'>Navbar</nav>
+        <Navbar/>
 
         <h1 className='text-white text-center font-bold text-5xl font-roboto tracking-wide'>Societies</h1>
 

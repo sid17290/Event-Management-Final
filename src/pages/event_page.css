@@ -36,7 +36,7 @@ body {
     background-color: #1e1b1b;
   }
 
-  img {
+  .image img {
     height: 100%;
     width: 100%;
     border-radius: 20px;

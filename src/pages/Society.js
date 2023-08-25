@@ -1,29 +1,35 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
+import Navbar from '../components/Navbar'
+import EventScroll from '../components/EventScroll'
+import EventCard from '../components/EventCard'
 
 const Society = () => {
 
-    // const [society, setSociety] = useState()
+    const [events, setEvents] = useState([])
     const location = useLocation()
     const society = location?.state?.society //This is passed from the previous page using navigate()
     const [aboutIsExpanded, setAboutIsExpanded] = useState(false)
 
-    // function fetchData(){
-    // fetch("/data/societies.json")
-    // .then(response => response.json())
-    // .then(json => {;
-    //         setSociety(json[0])
-    //     })
-    // }
+    function fetchData(){
+    fetch("/data/events.json")
+    .then(response => response.json())
+    .then(json => {
+            setEvents(json)
+            console.log(json)
+        })
+    }
 
-    // useEffect(()=>{
-    //     fetchData()
-    // },[])
+    useEffect(()=>{
+        fetchData()
+    },[])
 
   return (
     <div className='bg-darkGray min-h-screen flex flex-col gap-6 items-center'>
 
-        <nav className='h-12 text-white'>Navbar</nav>
+        
+            <Navbar/>
+        
 
         <main className="w-full md:w-8/12 flex flex-col gap-7 items-center">
             {/* banner */}
@@ -74,7 +80,8 @@ const Society = () => {
             </div>
 
             {/* upcoming events */}
-            <div className='text-white h-60'>upcoming events</div>
+            <EventCard event={events[0]}/>
+            <EventCard event={events[1]}/>
 
             {/* recruitment process */}
             <div className='bg-lightGray w-full rounded-2xl'>
