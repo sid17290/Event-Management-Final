@@ -1,6 +1,6 @@
 [
   {
-    "s_no" : 0,
+    "id" : 0,
     "event_image":"eventpic.jpeg",
     "event_logo": "soc_logo.jpg",
     "fee": "Free",
@@ -23,7 +23,7 @@
     "genre" : "JoeMama"
   },
   {
-    "s_no" : 0,
+    "id" : 1,
     "event_image":"eventpic.jpeg",
     "event_logo": "soc_logo.jpg",
     "fee": "Free",
