@@ -6,6 +6,9 @@
     .rec-carousel button{
         display: none;
     }
+    .rec .dydPIA{
+        margin: 0px;
+    }
 }
 
 .rec.rec-dot{
