@@ -23,9 +23,16 @@ const myArrowOrange = ({ type, onClick, isEdge }) =>{
   )
 }
 
+const breakPoints = [
+  
+  { width: 600, itemsToShow: 3 },
+  { width: 800, itemsToShow: 4 },
+  { width: 1100, itemsToShow: 5 }
+]
+
 const Home = () => {
   return (
-    <div className='mx-[10vw]'>
+    <div className='md:mx-[10vw]'>
       <Carousel itemsToShow={1} renderArrow={myArrow} enableAutoPlay autoPlaySpeed={2500}>
           <item>{Main_slide(0)}</item>
           <item>{Main_slide(1)}</item>
@@ -33,7 +40,7 @@ const Home = () => {
           <item>{Main_slide(1)}</item>
           <item>{Main_slide(1)}</item>
       </Carousel>
-      <Carousel className='upcoming_carousel' renderArrow={myArrowOrange} itemsToShow={4} >
+      <Carousel className='upcoming_carousel' itemPadding={[0, 10]} breakPoints={breakPoints} renderArrow={myArrowOrange} >
           <item>{EventCard(0)}</item>
           <item>{EventCard(1)}</item>
           <item>{EventCard(2)}</item>
@@ -41,7 +48,7 @@ const Home = () => {
           <item>{EventCard(4)}</item>
           <item>{EventCard(5)}</item>
       </Carousel>
-      <Carousel className='upcoming_carousel' renderArrow={myArrowOrange} itemsToShow={4} >
+      <Carousel className='upcoming_carousel' itemPadding={[0, 10]} breakPoints={breakPoints} renderArrow={myArrowOrange} >
           <item>{SocietyCard(0)}</item>
           <item>{SocietyCard(1)}</item>
           <item>{SocietyCard(2)}</item>
