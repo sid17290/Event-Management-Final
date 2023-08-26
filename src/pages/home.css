@@ -2,11 +2,13 @@
     display: block;
 }
 
-.rec.rec-arrow{
-    background-color: transparent;
-    border-radius: 0px;
-    border: none;
-    color: white;
+@media only screen and (max-width:768px) {
+    .rec-carousel button{
+        display: none;
+    }
+    .rec .dydPIA{
+        margin: 0px;
+    }
 }
 
 .rec.rec-dot{
@@ -15,19 +17,15 @@
     width: 7px;
 }
 
+.upcoming_carousel .rec-dot{
+    display: none;
+}
+
 .rec.rec-dot_active{ 
     background-color: rgb(255, 72, 0);
     box-shadow: none;
     height: 7px;
-    width: 7px;
-}
-
-.rec.iWchow:hover:enabled, .rec.iWchow:focus:enabled{
-    background-color: rgb(255, 72, 0);
-    color: rgb(255, 255, 255);
-    border: 0px;
-}
-
-.rec.rec-arrow:disabled{
-    cursor: pointer;
+    width: 100px;
+    border-radius: 0%;
+    border-radius: 20px;
 }
