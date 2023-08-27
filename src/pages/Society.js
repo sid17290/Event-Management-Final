@@ -1,31 +1,31 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import Navbar from '../components/Navbar'
-import EventScroll from '../components/EventScroll'
-import EventCard from '../components/EventCard'
+import EventsCarousel from '../components/EventsCarousel'
+import events from '../data/events.json'
 
 const Society = () => {
 
-    const [events, setEvents] = useState([])
+    // const [events, setEvents] = useState([])
     const location = useLocation()
     const society = location?.state?.society //This is passed from the previous page using navigate()
     const [aboutIsExpanded, setAboutIsExpanded] = useState(false)
 
-    function fetchData(){
-    fetch("/data/events.json")
-    .then(response => response.json())
-    .then(json => {
-            setEvents(json)
-            console.log(json)
-        })
-    }
+    // function fetchData(){
+    // fetch("/data/events.json")
+    // .then(response => response.json())
+    // .then(json => {
+    //         setEvents(json)
+    //         console.log(json)
+    //     })
+    // }
 
-    useEffect(()=>{
-        fetchData()
-    },[])
+    // useEffect(()=>{
+    //     fetchData()
+    // },[])
 
   return (
-    <div className='bg-darkGray min-h-screen flex flex-col gap-6 items-center'>
+    <div className='bg-darkGray min-h-screen flex flex-col gap-6 items-center md:mb-8'>
 
         
             <Navbar/>
@@ -80,8 +80,10 @@ const Society = () => {
             </div>
 
             {/* upcoming events */}
-            <EventCard event={events[0]}/>
-            <EventCard event={events[1]}/>
+            <div className='w-full'>
+                <h3 className='text-white text-left text-lg ml-3 md:ml-14 mb-1'>Upcoming Events</h3>
+                <EventsCarousel events={events}/>
+            </div>
 
             {/* recruitment process */}
             <div className='bg-lightGray w-full rounded-2xl'>
@@ -111,7 +113,10 @@ const Society = () => {
             </div>
 
             {/* past events */}
-            <div className='text-white h-60'>past events</div>
+            <div className='w-full'>
+                <h3 className='text-white text-left text-lg ml-3 md:ml-14 mb-1'>Past Events</h3>
+                <EventsCarousel events={events}/>
+            </div>
 
         </main>
 

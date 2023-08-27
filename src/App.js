@@ -5,16 +5,18 @@ import Societies from './pages/Societies';
 import Event from './pages/Event'
 import Main_slide from './components/Main_slide';
 import Home from './pages/Home';
+import Events from './pages/Events';
 
 function App() {
   return (
     <>
       <Router>
         <Routes>
-          <Route path='/main' element={<Home/>}/> {/* replace with Home page */}
+          <Route path='/' element={<Home/>}/> {/* replace with Home page */}
           <Route path="/society" element={<Society/>} />
           <Route path='/societies' element={<Societies/>}/>
           <Route path="/event" element={<Event/>} />
+          <Route path="events" element={<Events/>} />
         </Routes>
       </Router>
     </>

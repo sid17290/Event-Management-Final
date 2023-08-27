@@ -1,23 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import SocietyCard from '../components/SocietyCard'
 import Navbar from '../components/Navbar'
+import societies from '../data/societies.json'
 
 const Societies = () => {
 
-    const [societies, setSocieties] = useState()
+    // const [societies, setSocieties] = useState()
     const [selected, setSelected] = useState()
 
-    function fetchData(){
-    fetch("/data/societies.json")
-    .then(response => response.json())
-    .then(json => {;
-            setSocieties(json)
-        })
-    }
+    // function fetchData(){
+    // fetch("/data/societies.json")
+    // .then(response => response.json())
+    // .then(json => {;
+    //         setSocieties(json)
+    //     })
+    // }
 
-    useEffect(()=>{
-        fetchData()
-    },[])
+    // useEffect(()=>{
+    //     fetchData()
+    // },[])
 
   return (
     <div className='bg-darkGray min-h-screen flex flex-col gap-6 items-center'>
