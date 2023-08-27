@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
 
+
 const EventCard = ({event, isSelected=false}) => {
 
     const navigate = useNavigate()
