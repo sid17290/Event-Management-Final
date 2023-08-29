@@ -24,6 +24,8 @@ function Event_page() {
           <h1>{data.event_name}</h1>
           <div className="graytext">{data.organizer} | {data.mode} </div>
           <hr className='hr1' />
+          <div className='br1'/>
+
           <div className="date">
             <div className="startdate"><div>Start Date</div>
               <div className="graytext">{data.start}</div>
@@ -101,8 +103,7 @@ function Event_page() {
             </div>
             <div className="media">
               <a href={data.instagram}><img src="insta.svg" alt="" /></a>
-              <a href={data.facebook}><img src="insta.svg" alt="" /></a>
-              <a href={data.linkedin}><img src="insta.svg" alt="" /></a>
+              <a href={data.linkedin}><img src="linkedin.svg" alt="" /></a>
             </div>
           </div>
           {/* <div className="about"><div className='title2'>About </div><div className="graytext">{data.about}</div></div> */}
