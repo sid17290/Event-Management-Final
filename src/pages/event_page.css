@@ -10,7 +10,11 @@ body {
   display: flex;
 }
 
-@media only screen and (min-width: 720px) {
+.br1{
+  height: 33px;
+}
+
+@media only screen and (min-width: 768px) {
   .eventpage {
     background-color: #0f0f0f;
     color: white;
@@ -220,10 +224,10 @@ body {
   margin-top: 1%;
 }
 
-svg {
-  display: initial;
-  vertical-align: initial;
-}
+  svg {
+    display: initial;
+    vertical-align: initial;
+  }
 
 .right {
   float: right;
@@ -239,6 +243,11 @@ svg {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-right: 5px;
+}
+
+.rupee img{
+  width: 10px;
+
 }
 
 .register1 a {
@@ -351,6 +360,8 @@ svg {
 .media {
   height: 2rem;
   margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
   display: flex;
   padding: 4% 15% 0px 15%;
 }
@@ -358,16 +369,17 @@ svg {
 .media a {
   height: 100%;
   width: auto;
-  margin-top: 12px;
+  /* margin-top: 12px; */
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 4px;
+  margin-right: 4px;
   padding-right: 5%;
   padding-left: 5%;
 }
 
 .media img {
   border-radius: 0px;
+  height: 38px;
 }
 
 .media img:hover {
