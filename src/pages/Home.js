@@ -64,7 +64,7 @@ const Home = () => {
 
         <div className='mt-10'>
           <h3 className='text-white text-lg font-semibold text-left ml-3 md:ml-14 mb-1'>Upcoming Events
-            <a className='text-yellow-500 float-right cursor-pointer font-light mr-[5.5rem]' onClick={() => { navigate('/events') }}>view all</a></h3>
+            <a className='text-yellow-500 float-right cursor-pointer font-light mr-[7%]' onClick={() => { navigate('/events') }}>view all</a></h3>
           <EventsCarousel events={events} />
         </div>
 
@@ -94,7 +94,7 @@ const Home = () => {
         {/* societies carousel */}
         <div>
           <h3 className='text-white text-lg font-semibold text-left ml-3 md:ml-14'>Societies
-            <a className='text-yellow-500 float-right cursor-pointer font-light mr-[4rem]' onClick={() => { navigate('/societies') }}>view all</a></h3>
+            <a className='text-yellow-500 float-right cursor-pointer font-light mr-[5%]' onClick={() => { navigate('/societies') }}>view all</a></h3>
           <Carousel className='upcoming_carousel' itemPadding={[10, 10]} breakPoints={breakPoints} renderArrow={myArrowOrange} >
             {
               societies.map((society, index) => (
