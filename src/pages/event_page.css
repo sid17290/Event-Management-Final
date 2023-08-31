@@ -111,7 +111,7 @@ body {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
   .organizer {
     display: none;
   }
@@ -243,6 +243,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-right: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .rupee img{
@@ -265,7 +267,7 @@ body {
 }
 
 .register1 a:hover {
-  background-image: linear-gradient(54deg, #f54009b3 50%, #f5d20b93 100%);
+  background-image: linear-gradient(54deg, #f35c2f 50%, #e4cc42 100%);
   cursor: pointer;
 }
 
@@ -308,7 +310,7 @@ body {
 }
 
 .register3 a:hover {
-  background-image: linear-gradient(54deg, #f54009b3 50%, #f5d20b93 100%);
+  background-image: linear-gradient(54deg, #f35c2f 50%, #e4cc42 100%);
   cursor: pointer;
 }
 
