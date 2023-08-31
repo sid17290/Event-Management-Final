@@ -21,6 +21,10 @@
     display: none;
 }
 
+.main-carousel-reg-btn:hover{
+    background: linear-gradient(54deg, #F54109 50%, #F5D00B 100%);
+}
+
 /* .main_carousel .rec.rec-carousel button{
     margin: -90px;
     z-index: 1;

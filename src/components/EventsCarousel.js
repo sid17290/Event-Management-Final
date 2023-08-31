@@ -15,7 +15,7 @@ const myArrowOrange = ({ type, onClick, isEdge }) =>{
     
     { width: 600, itemsToShow: 2 },
     { width: 800, itemsToShow: 4 },
-    { width: 1100, itemsToShow: 5 }
+    { width: 1100, itemsToShow: 5, itemPadding: [0,0] }
   ]
 
 const EventsCarousel = ({events}) => {

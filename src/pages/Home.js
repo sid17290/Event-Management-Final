@@ -47,10 +47,10 @@ const Home = () => {
 
 
         {/* Top static banner */}
-        <div className="flex flex-col gap-3 md:gap-5 mx-auto mb-8 mt-1 md:mb-10 md:mt-8 w-11/12 md:w-8/12 text-center items-center justify-center">
+        <div className="flex flex-col gap-3 md:gap-5 mx-auto mb-10 mt-1 md:mb-20 md:mt-14 w-11/12 md:w-8/12 text-center items-center justify-center">
           <h1 className='text-5xl font-semibold'><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F54109] to-[#ef970a]" >EXPERIENCE</span> <span className="text-white">THE BEST EVENTS OF YOUR</span> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F54109] to-[#ef970a]">COLLEGE</span></h1>
-          <p className='text-lightestGray text-md'>Get to know about all the cultural fests, competitions and hackathons that are going to happen in your college</p>
-          <button onClick={() => { navigate('/events') }} className='px-6 py-2 text-white border border-white rounded-full hover:bg-white hover:text-black'>Explore Events</button>
+          <p className='text-lightestGray text-md md:w-[60%]'>Get to know about all the cultural fests, competitions and hackathons that are going to happen in your college</p>
+          <button onClick={() => { navigate('/events') }} className='mt-3 px-6 py-2 text-white border border-white rounded-full hover:bg-white hover:text-black'>Explore Events</button>
         </div>
 
         {/* main big carousel */}
@@ -62,6 +62,7 @@ const Home = () => {
           <div>{Main_slide(1)}</div>
         </Carousel>
 
+        {/*Upcoming Events carousel */}
         <div className='mt-10'>
           <h3 className='text-white text-lg font-semibold text-left ml-3 md:ml-14 mb-1'>Upcoming Events
             <a className='text-yellow-500 float-right cursor-pointer font-light mr-[7%]' onClick={() => { navigate('/events') }}>view all</a></h3>
